@@ -1,0 +1,138 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: #fff5d8;
+  background:
+    radial-gradient(circle at top, #8d280c, #31070b 65%, #16030a);
+  padding: 20px 12px;
+}
+
+.lights {
+  text-align: center;
+  font-size: 25px;
+  padding: 12px;
+  animation: glow 2s infinite alternate;
+}
+
+.container {
+  width: 100%;
+  max-width: 470px;
+  margin: 15px auto;
+}
+
+.hero {
+  text-align: center;
+  padding: 26px 20px;
+  border: 2px solid #e9ae38;
+  border-radius: 22px;
+  background: linear-gradient(150deg, #70160e, #31060c);
+  box-shadow: 0 0 25px #ff9d2640;
+}
+
+.festival {
+  color: #ffd45b;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+h1 {
+  color: #ffda69;
+  font-size: 29px;
+}
+
+h2 {
+  font-size: 21px;
+  color: #fff0b1;
+}
+
+.big-gift {
+  font-size: 75px;
+  margin: 20px;
+  animation: float 2s infinite ease-in-out;
+}
+
+.offer {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.notice {
+  background: #fff2d4;
+  color: #61200b;
+  border-radius: 12px;
+  padding: 13px;
+  margin: 18px 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.claim-button {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 50px;
+  padding: 17px;
+  margin: 20px auto;
+  background: linear-gradient(90deg, #ffd04c, #ff8d16);
+  color: #4d1700;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  animation: pulse 1.5s infinite;
+}
+
+input[type="tel"], select {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  margin: 12px 0 20px;
+  border: 1px solid #dca53d;
+  border-radius: 10px;
+  font-size: 16px;
+  background: #fff8e9;
+  color: #381509;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+}
+
+.consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.consent input {
+  margin-top: 4px;
+}
+
+.small {
+  color: #f5d7a4;
+  font-size: 12px;
+  line-height: 1.8;
+  margin-top: 25px;
+}
+
+@keyframes pulse {
+  50% { transform: scale(1.04); }
+}
+
+@keyframes float {
+  50% { transform: translateY(-9px); }
+}
+
+@keyframes glow {
+  to { text-shadow: 0 0 18px #ffcc46; }
+}
