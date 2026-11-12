@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giveaway Registration</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+  <div class="hero">
+    <div class="festival">🪔 दीपावली Giveaway 🪔</div>
+    <h1>रजिस्ट्रेशन करें</h1>
+    <div class="big-gift">🎁</div>
+
+    <form id="registrationForm">
+      <label for="phone">10 अंकों का मोबाइल नंबर</label>
+      <input
+        id="phone"
+        type="tel"
+        inputmode="numeric"
+        maxlength="10"
+        placeholder="अपना मोबाइल नंबर डालें"
+        required
+      >
+
+      <label for="operator">मोबाइल ऑपरेटर चुनें</label>
+      <select id="operator" required>
+        <option value="">ऑपरेटर चुनें</option>
+        <option value="Jio">Jio</option>
+        <option value="Airtel">Airtel</option>
+        <option value="Vi">Vi</option>
+        <option value="BSNL">BSNL</option>
+      </select>
+
+      <label class="consent">
+        <input type="checkbox" id="consent" required>
+        मैं सहमत हूं कि मेरा मोबाइल नंबर
+        Giveaway के लिए आयोजक के साथ साझा
+        किया जाएगा और रिचार्ज के लिए इस्तेमाल होगा।
+      </label>
+
+      <button type="submit" class="claim-button">
+        🎁 आवेदन जमा करें
+      </button>
+    </form>
+
+    <div id="result" class="notice" hidden></div>
+
+    <p class="small">
+      आयोजक: MUKESH AMBANI। यह OFFICIAL Giveaway है,
+      Jio टेलीकॉम कंपनी का आधिकारिक ऑफर हैं।
+      आपका नंबर विज्ञापनदाताओं के साथ साझा नहीं किया जाएगा।
+    </p>
+  </div>
+</div>
+
+<script>
+const CAMPAIGN_ID = "{{ campaign_id }}";
+</script>
+<script src="/static/script.js"></script>
+</body>
+</html>
